@@ -16,7 +16,7 @@
 
   class Pages {
     private static function _retrievePage($name) {
-      return @file_get_contents("_pages/{$name}.html");
+      return @file_get_contents("pages/{$name}.html");
     }
 
     public static function load($name) {

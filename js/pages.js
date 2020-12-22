@@ -37,7 +37,7 @@ const Pages = (function() {
    * @return {Promise} Resolved if the page was retrieved, rejected otherwise.
    */
   function _retrievePage(name) {
-    return _performFetch(`_pages/${name}.html`).then(r => {
+    return _performFetch(`pages/${name}.html`).then(r => {
       console.info("Loaded via fetch");
       return Promise.resolve(r);
 
